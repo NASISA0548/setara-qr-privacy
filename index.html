@@ -3,41 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy & Terms - Setara QR</title>
+    <title>Legal & Privacy Policy - Setara QR</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 24px; background: #fafafa; }
-        .card { background: #fff; padding: 32px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
-        h1 { color: #00838f; margin-top: 0; }
-        h2 { color: #222; border-bottom: 2px solid #eee; padding-bottom: 8px; margin-top: 28px; }
-        p, li { color: #555; }
-        .contact { background: #e0f7fa; padding: 16px; border-radius: 8px; margin-top: 24px; }
+        :root {
+            --primary: #00838f;
+            --primary-dark: #005662;
+            --accent: #00e5ff;
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+            --bg-page: #f8fafc;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            line-height: 1.65;
+            padding: 40px 16px;
+        }
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 48px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+            border: 1px solid var(--border-color);
+        }
+        .brand-header {
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+        .app-badge {
+            display: inline-block;
+            background: #e0f7fa;
+            color: var(--primary-dark);
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            padding: 4px 10px;
+            border-radius: 6px;
+            margin-bottom: 12px;
+        }
+        h1 {
+            font-size: 32px;
+            color: #0f172a;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+        .meta-info {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-top: 8px;
+        }
+        h2 {
+            font-size: 20px;
+            color: #0f172a;
+            margin-top: 36px;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+        }
+        h2::before {
+            content: "";
+            display: inline-block;
+            width: 4px;
+            height: 20px;
+            background: var(--primary);
+            border-radius: 2px;
+            margin-right: 10px;
+        }
+        p {
+            font-size: 15px;
+            color: var(--text-muted);
+            margin-bottom: 14px;
+        }
+        ul {
+            margin-left: 20px;
+            margin-bottom: 16px;
+        }
+        li {
+            font-size: 15px;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+        }
+        .legal-highlight {
+            background-color: #f1f5f9;
+            border-left: 4px solid var(--primary);
+            padding: 16px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+            font-size: 14px;
+            color: #334155;
+        }
+        .contact-box {
+            background: linear-gradient(135deg, #e0f7fa 0%, #f0fdf4 100%);
+            border: 1px solid #b2ebf2;
+            border-radius: 12px;
+            padding: 24px;
+            margin-top: 40px;
+        }
+        .contact-box h3 {
+            color: var(--primary-dark);
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+        .contact-box a {
+            color: var(--primary-dark);
+            font-weight: 700;
+            text-decoration: underline;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 36px;
+            font-size: 13px;
+            color: #94a3b8;
+        }
+        @media (max-width: 640px) {
+            body { padding: 16px 8px; }
+            .container { padding: 24px 18px; }
+            h1 { font-size: 24px; }
+        }
     </style>
 </head>
 <body>
-    <div class="card">
-        <h1>Setara QR - Privacy Policy</h1>
-        <p><strong>Effective Date:</strong> September 2026</p>
-        <p>Welcome to <strong>Setara QR</strong>. We are committed to protecting your privacy. This policy explains how our application handles your information.</p>
 
-        <h2>1. Camera &amp; Gallery Permissions</h2>
-        <p>Setara QR requires camera access exclusively to scan QR codes and barcodes in real time. We do not record, store, or transmit your camera feed. Images picked from your gallery are processed locally on your device solely for decoding purposes.</p>
+    <div class="container">
+        <div class="brand-header">
+            <span class="app-badge">Official Policy Statement</span>
+            <h1>Setara QR — Privacy Policy &amp; Terms</h1>
+            <div class="meta-info">
+                <span>Application: <strong>Setara QR (Scanner &amp; Generator)</strong></span> • 
+                <span>Last Updated: <strong>September 2026</strong></span>
+            </div>
+        </div>
 
-        <h2>2. Data Collection &amp; Processing</h2>
-        <p>All barcode scanning and generation operations are performed 100% locally on your device. We do not operate external servers to collect, upload, or sell your personal data or generated codes.</p>
+        <p>Setara Manufacturing operates the mobile application <strong>Setara QR</strong>. This policy page outlines our policies regarding the collection, handling, and security of user data when using our utility tool.</p>
 
-        <h2>3. Third-Party Services &amp; Ads</h2>
-        <p>Our app utilizes Google AdMob to display advertisements and Google ML Kit for on-device barcode recognition. These services may collect device identifiers and technical analytics in accordance with their privacy policies:</p>
+        <div class="legal-highlight">
+            <strong>Core Privacy Principle:</strong> Setara QR does NOT transmit, harvest, sell, or rent your personal information, scanned contents, or device images to any remote servers. All processing operates strictly on-device.
+        </div>
+
+        <h2>1. Camera Permission Policy</h2>
+        <p>Setara QR requires runtime access to your device's camera strictly for:</p>
         <ul>
-            <li>Google Play Services &amp; AdMob Privacy Policy</li>
+            <li>Decoding barcodes and QR codes in real-time via hardware video feed.</li>
+            <li>Enabling flash control to illuminate dark scanning environments.</li>
+        </ul>
+        <p>We do NOT record video feeds, take silent photographs, or transmit camera capture buffers to external parties.</p>
+
+        <h2>2. Storage &amp; Photo Gallery Access</h2>
+        <p>When selecting images from your device gallery to decode a barcode or when saving generated barcodes:</p>
+        <ul>
+            <li>Images are decoded on the local device using Google ML Kit and ZXing engine.</li>
+            <li>No bitmap data or personal galleries leave the client runtime environment.</li>
+            <li>Saved codes are written directly to your public Pictures directory using standard Android MediaStore protocols.</li>
         </ul>
 
-        <h2>4. Terms &amp; Conditions</h2>
-        <p>Setara QR is provided free of charge as a productivity tool. You are responsible for inspecting and verifying third-party URLs or actions embedded within scanned codes before navigating to them.</p>
+        <h2>3. Third-Party Frameworks &amp; Advertising</h2>
+        <p>To support ongoing engineering and provide free services, Setara QR integrates reputable industry-standard SDKs:</p>
+        <ul>
+            <li><strong>Google Mobile Ads (AdMob):</strong> Used to deliver non-personalized or personalized banner advertisements conforming to Google Play Developer Policies. AdMob may utilize standard hardware identifiers (AAID) for fraud protection and basic ad operations.</li>
+            <li><strong>Google ML Kit Vision:</strong> Operates entirely on-device to deliver low-latency barcode identification without internet dependency.</li>
+        </ul>
 
-        <div class="contact">
-            <h3>Contact Us</h3>
-            <p>If you have any questions or feedback regarding this policy, please reach out to us at: <strong>support@setara.com</strong></p>
+        <h2>4. User Data Retention &amp; Deletion</h2>
+        <p>Setara QR provides localized History management:</p>
+        <ul>
+            <li>All scan and generation records are held strictly in private local device storage (Android Encrypted Shared Preferences).</li>
+            <li>Users hold absolute ownership and can clear individual items or perform complete batch purges at any time via the History dashboard.</li>
+            <li>Uninstalling the app immediately purges all localized application records.</li>
+        </ul>
+
+        <h2>5. Children's Privacy (COPPA &amp; GDPR)</h2>
+        <p>Setara QR does not solicit, target, or knowingly store personal data from children under the age of 13. The application is built as a general utility tool compliant with Google Play Families and Child Safety requirements.</p>
+
+        <h2>6. Terms of Service</h2>
+        <p>By using Setara QR, you agree to inspect and exercise due caution before navigating to third-party web domains, sending messages, or initiating Wi-Fi handshakes decoded from physical codes. Setara Manufacturing bears no liability for external hyperlinks created by third-party barcode publishers.</p>
+
+        <div class="contact-box">
+            <h3>Developer &amp; Legal Support</h3>
+            <p>For data inquiries, compliance verifications, or technical assistance regarding Setara QR, contact our team directly at:</p>
+            <p>Email: <a href="mailto:setaramanufacturing@gmail.com">setaramanufacturing@gmail.com</a></p>
+        </div>
+
+        <div class="footer">
+            &copy; 2026 Setara Manufacturing. All rights reserved.
         </div>
     </div>
+
 </body>
 </html>
