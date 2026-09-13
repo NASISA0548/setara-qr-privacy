@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legal & Privacy Policy - Setara QR</title>
 
-    <!-- Setara QR Official Favicon (Absolute Path + Cache Buster) -->
-    <link rel="icon" type="image/png" href="https://nasisa0548.github.io/setara-qr-privacy/favicon.png?v=2">
-    <link rel="shortcut icon" type="image/png" href="https://nasisa0548.github.io/setara-qr-privacy/favicon.png?v=2">
-    <link rel="apple-touch-icon" href="https://nasisa0548.github.io/setara-qr-privacy/favicon.png?v=2">
+    <!-- Embedded High-Speed Vector Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23FFFFFF' stroke='%23E2E8F0' stroke-width='2'/%3E%3Cpath stroke='%23000000' stroke-width='5' stroke-linecap='round' stroke-linejoin='round' fill='none' d='M18 34V20a2 2 0 0 1 2-2h14M66 18h14a2 2 0 0 1 2 2v14M82 66v14a2 2 0 0 1-2 2H66M34 82H20a2 2 0 0 1-2-2V66'/%3E%3Crect x='24' y='24' width='14' height='14' fill='%23000000'/%3E%3Crect x='62' y='24' width='14' height='14' fill='%23000000'/%3E%3Crect x='24' y='62' width='14' height='14' fill='%23000000'/%3E%3Cline x1='6' y1='50' x2='94' y2='50' stroke='%2300E5FF' stroke-width='4' filter='drop-shadow(0 0 4px %2300E5FF)'/%3E%3Ctext x='50' y='63' font-family='Arial, sans-serif' font-size='42' font-weight='900' fill='%23000000' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
 
     <style>
         :root {
@@ -48,13 +46,41 @@
             align-items: center;
             gap: 20px;
         }
-        .brand-header img {
-            width: 72px;
-            height: 72px;
-            border-radius: 14px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-            object-fit: cover;
+        
+        /* Pure CSS & SVG Logo (Zero Loading Delay) */
+        .logo-box {
+            width: 76px;
+            height: 76px;
+            min-width: 76px;
+            border-radius: 16px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+            background: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
         }
+        .laser-line {
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background: #00e5ff;
+            box-shadow: 0 0 8px #00e5ff, 0 0 12px #00b0ff;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            z-index: 2;
+        }
+        .logo-text {
+            font-size: 42px;
+            font-weight: 900;
+            color: #0f172a;
+            line-height: 1;
+            z-index: 1;
+        }
+        
         .brand-title-area {
             flex: 1;
         }
@@ -158,11 +184,7 @@
             color: var(--fb-color) !important;
             font-weight: 600;
             margin-top: 8px;
-            transition: all 0.2s ease;
-        }
-        .fb-badge:hover {
-            background-color: #f8fafc;
-            border-color: var(--fb-color);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.04);
         }
         .footer {
             text-align: center;
@@ -182,7 +204,12 @@
 
     <div class="container">
         <div class="brand-header">
-            <img src="https://nasisa0548.github.io/setara-qr-privacy/favicon.png?v=2" alt="Setara QR Logo" onerror="this.src='favicon.png'">
+            <!-- Offline High-Speed Setara Brand Logo -->
+            <div class="logo-box">
+                <div class="laser-line"></div>
+                <div class="logo-text">S</div>
+            </div>
+            
             <div class="brand-title-area">
                 <span class="app-badge">Official Policy Statement</span>
                 <h1>Setara QR — Privacy Policy &amp; Terms</h1>
