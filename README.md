@@ -1,0 +1,1 @@
+# setara-qr-privacy
